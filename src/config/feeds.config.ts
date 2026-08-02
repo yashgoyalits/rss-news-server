@@ -13,16 +13,16 @@ export type FeedEntry = {
 
 export const RSS_FEEDS: Record<FeedCategory, FeedEntry[]> = {
   markets: [
-    { url: "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml", limit: 10 },
-    { url: "https://feeds.marketwatch.com/marketwatch/topstories/", limit: 8 },
-    { url: "https://finance.yahoo.com/news/rssindex", limit: 6 },
+    { url: "https://www.livemint.com/rss/markets", limit: 25 },
+    { url: "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms", limit: 25 },
+    { url: "https://www.thehindubusinessline.com/markets/?service=rss", limit: 25 },
   ],
   companies: [
-    { url: "https://feeds.reuters.com/reuters/technologyNews", limit: 10 },
-    { url: "https://techcrunch.com/feed/", limit: 10 },
+    { url: "https://www.thehindubusinessline.com/companies/?service=rss", limit: 25 },
+    { url: "https://www.livemint.com/rss/companies", limit: 25 },
   ],
   industry: [
-    { url: "https://www.wired.com/feed/rss", limit: 8 },
-    { url: "https://feeds.arstechnica.com/arstechnica/index", limit: 8 },
+    { url: "https://economictimes.indiatimes.com/news/industry/rssfeeds/13352306.cms", limit: 15 },
+    { url: "https://www.business-standard.com/rss/industry-217.rss", limit: 15 },
   ],
 };
